@@ -18,5 +18,8 @@
     <ClCompile Include="연습.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="연결리스트.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
