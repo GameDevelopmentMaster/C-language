@@ -2,8 +2,11 @@
 #include<malloc.h>
 typedef struct TEST {
 	int a;
-	char c;
+	char NextLink;
 }test;
+
+void Test(test* test) {
+}
 
 test* CreateIntChange(){
 	test* testStruct;
