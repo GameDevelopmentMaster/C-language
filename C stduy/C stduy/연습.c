@@ -1,17 +1,31 @@
-	
-
 #include<stdio.h>
+#include<malloc.h>
+typedef struct TEST {
+	int a;
+	char c;
+}test;
 
-	int main() {
-		int key, num = 0, i, j;
-		scanf_s("%d", &key);
-		num = key;
-		for (i = 0; i < key;i++) {
-			for (j = key;j >0 ;j--) {
-				printf("%d ", num);
-				num--;
-			}
-			printf("\n");
-			num = key * (i + 2);
-		}
-	}
+test* CreateIntChange(){
+	test* testStruct;
+	testStruct = (test*)malloc(sizeof(test));
+	testStruct = 3;
+	return testStruct;
+}
+
+test* CreateCharChange() {
+	test* testStruct;
+	testStruct = (test*)malloc(sizeof(test));
+	testStruct = NULL;
+	return testStruct;
+}
+
+int main() {
+	test* a;
+	a = (test*)malloc(sizeof(test));
+	a = CreateIntChange();
+	printf("%d\n", a);
+	a = CreateCharChange();
+	printf("%d", a);
+	getchar();
+	return 0;
+}
