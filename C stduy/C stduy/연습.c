@@ -22,13 +22,15 @@ test* CreateCharChange() {
 	return testStruct;
 }
 
+void IntChage(int *a) {
+	printf("%d\n", *a);
+	*a = 10;
+	printf("%d\n", *a);
+}
+
 int main() {
-	test* a;
-	a = (test*)malloc(sizeof(test));
-	a = CreateIntChange();
-	printf("%d\n", a);
-	a = CreateCharChange();
-	printf("%d", a);
-	getchar();
+	int *a, *b=1,c=0;
+	IntChage(b);
+	printf("%d", b);
 	return 0;
 }
